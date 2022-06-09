@@ -14,10 +14,13 @@ class Resizer{
     constructor(container, camera, renderer){
         setSize(container, camera, renderer);
         window.addEventListener('resize', ()=>{
+            console.log('resize');
+            setSize(container, camera, renderer);
             this.onResize();
         })
     }
     onResize(){
+        
         //re-render scene
     }
 }
