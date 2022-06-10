@@ -1,7 +1,7 @@
 import {createScene} from './components/scene.js';
 import {createCamera} from './components/camera.js';
 import {createCube} from './components/cube.js';
-import {createControls} from './systems/cameraControls.js';
+// import {createControls} from './systems/cameraControls.js';
 
 import {Loop} from './systems/Loop.js';
 import {createRenderer} from './systems/renderer.js';
@@ -15,7 +15,7 @@ class World{
         renderer = createRenderer();
         container.append(renderer.domElement);
         
-        const controls = createControls();
+        // const controls = createControls();
 
         //init 3d object init
         const cube = createCube(2);
