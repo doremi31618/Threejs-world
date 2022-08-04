@@ -31,6 +31,15 @@ class World{
         loop = new Loop(camera, scene, renderer);
     }
 
+    loadMorakotModel(){
+        loadGltfModel("assets/3dmodels/0726.glb")
+        .then((gltf)=>{
+            scene.add(gltf.scene);
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+    }
 
     start(){
         loop.start();
