@@ -1,0 +1,30 @@
+{
+  "name": "morakot-3dmodel",
+  "version": "1.0.0",
+  "description": "using three.js 0.141.0 version",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doremi31618/Threejs-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doremi31618/Threejs-world/issues"
+  },
+  "homepage": "https://github.com/doremi31618/Threejs-world#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "postprocessing": "^6.28.5",
+    "three": "^0.143.0"
+  }
+}

@@ -13,7 +13,7 @@ function createCamera(){
         near,
         far
     );
-    camera.position.set(0,0,10);
+    camera.position.set(0,0,15);
     return camera;
 }
 
