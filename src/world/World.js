@@ -21,7 +21,7 @@ class World{
         controls = createControls(camera, renderer.domElement);
 
         //init 3d object init
-        scene.add(light);
+        // scene.add(light);
         scene.add(createCube(1));
         // this.loadMorakotModel();
         

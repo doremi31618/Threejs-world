@@ -8,7 +8,7 @@ function createRenderer(){
         premultipliedAlpha: false,
     });
     renderer.physicallyCorrectLights = true;
-    // renderer.setClearColor(0xFFFFFF, 0);
+    renderer.setClearColor(0xFFFFFF, 0);
     return renderer;
 }
 
