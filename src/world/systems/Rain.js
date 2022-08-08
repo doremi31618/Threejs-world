@@ -51,7 +51,7 @@ class Rain {
             let rainDrop = new Vector3(
                 Math.random() * 5 ,
                 Math.random() * 5,
-                Math.random() * 5 
+                Math.random() * 4.5
             )
             this.rainVelocity.push(0);
             rainDrops.push(rainDrop);
@@ -66,8 +66,8 @@ class Rain {
         })
 
         let rain = new Points(rainGeo, rainMaterial);
-        rain.position.set(-2.5,5,-2.1);
-        rain.renderOrder = 0;
+        rain.position.set(-2.5,5.1,-1.6);
+        rain.renderOrder = 1;
         // rain.rotation.set(0,0,0.735)
         // rain.rotation.set(0);
 
@@ -81,7 +81,7 @@ class Rain {
         // Smoke Texture Loader
         let loader = new TextureLoader();
         loader.load("https://raw.githubusercontent.com/navin-navi/codepen-assets/master/images/smoke.png",  (texture) => {
-            console.log("cloud",this)
+            // console.log("cloud",this)
             
             // let cloudGeo = new PlaneBufferGeometry(3, 3);
             let cloudMaterial = new MeshLambertMaterial({
@@ -104,14 +104,14 @@ class Rain {
             
                 cloud.position.set(
                     Math.random() * 5 - 3,
-                    Math.random() *  - 1,
-                    Math.random() * 5 - 3
+                    Math.random() * 2 - 1,
+                    Math.random() * 2 + 1
                 );
                 cloud.rotation.x =  -1.16;
                 cloud.rotation.y = -0.12;
                 cloud.rotation.z = Math.random() * 2 * Math.PI;
-                cloud.material.opacity =0.15;
-                cloud.renderOrder = 1;
+                cloud.material.opacity =0.18;
+                cloud.renderOrder = 0;
                 // cloud.life = 5;
                 cloudEntry.add(cloud);
                 this.cloudParticles.push(cloudEntry);

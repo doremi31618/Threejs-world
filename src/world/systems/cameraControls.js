@@ -3,7 +3,8 @@ import {MathUtils} from 'three';
 
 function createControls(camera, canvas){
     const controls = new OrbitControls(camera, canvas);
-    controls.minDistance = 5;
+    controls.minDistance = 10;
+    controls.maxDistance = 20;
     controls.minPolarAngle = MathUtils.degToRad(70);
     controls.maxPolarAngle = MathUtils.degToRad(90);
 

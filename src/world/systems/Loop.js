@@ -1,4 +1,4 @@
-import {Clock} from 'three';
+import {Clock, Color} from 'three';
 import {EventEmitter} from '../../lib/EventEmitter.js';
 class Loop extends EventEmitter{
 	constructor(camera, scene, renderer){
@@ -9,6 +9,7 @@ class Loop extends EventEmitter{
 		this.clock = new Clock();
 	}
 	start(){
+		// this.scene.background = new Color(0xffffff);
 		this.renderer.setAnimationLoop(()=>{
 			this.animate();
 		});
