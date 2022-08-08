@@ -8,7 +8,7 @@ function createRenderer(){
         premultipliedAlpha: false
         });
     renderer.physicallyCorrectLights = true;
-   
+    
     return renderer;
 }
 

@@ -3,7 +3,7 @@ import { PerspectiveCamera } from 'three';
 let fov = 35;
 let aspect = 1;
 let near = 0.1;
-let far = 2000;
+let far = 200;
 
 //setting attributes of camera & setting position
 function createCamera(){

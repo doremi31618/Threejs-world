@@ -17,7 +17,7 @@ class World{
         // light = createDirectLights();
         this.container = container;
         this.container.append(renderer.domElement);
-        // controls = createControls(camera, renderer.domElement);
+        controls = createControls(camera, renderer.domElement);
 
         //loop init
         loop = new Loop(camera, scene, renderer);
@@ -25,10 +25,10 @@ class World{
         
         //init 3d object init
         // scene.add(light);
-        scene.add(createCube(1));
-        // Morakot.initScene(scene, loop, camera, renderer).then(()=>{
-        //     this.displayUI();
-        // });
+        // scene.add(createCube(1));
+        Morakot.initScene(scene, loop, camera, renderer).then(()=>{
+            this.displayUI();
+        });
 
         //init resizer
         const resizer = new Resizer(container, camera, renderer);

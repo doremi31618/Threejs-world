@@ -61,6 +61,7 @@ class Rain {
 
         let rainMaterial = new PointsMaterial({
             color: 0xaaaaaa,
+            emissive: 0xaaaaaa,
             size: 0.05,
             transparent: true
         })
@@ -110,7 +111,7 @@ class Rain {
                 cloud.rotation.x =  -1.16;
                 cloud.rotation.y = -0.12;
                 cloud.rotation.z = Math.random() * 2 * Math.PI;
-                cloud.material.opacity =0.18;
+                cloud.material.opacity =0.8;
                 cloud.renderOrder = 0;
                 // cloud.life = 5;
                 cloudEntry.add(cloud);
