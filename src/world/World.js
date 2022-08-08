@@ -22,7 +22,8 @@ class World{
 
         //init 3d object init
         scene.add(light);
-        this.loadMorakotModel();
+        scene.add(createCube(1));
+        // this.loadMorakotModel();
         
         //init resizer
         const resizer = new Resizer(container, camera, renderer);
